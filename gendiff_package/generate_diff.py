@@ -2,6 +2,7 @@ import json
 
 
 def compare_file_contents(data_1, data_2):
+    '''Combining two dictionaries and comparing the differences'''
     key_set = set(data_1) | set(data_2)
     result = ''
     for key in sorted(key_set):
@@ -19,6 +20,7 @@ def compare_file_contents(data_1, data_2):
 
 
 def edit_string(string):
+    '''Replacing bool values ​​with strings'''
     new_string = string.replace('True', 'true')
     new_string = new_string.replace('False', 'false')
     new_string = new_string.replace('None', 'null')
@@ -27,6 +29,7 @@ def edit_string(string):
 
 
 def generate_diff(file_path_1, file_path_2):
+    '''Reading files and getting the verification result'''
     with open(file_path_1, 'r') as file:
         data1 = json.load(file)
     with open(file_path_2, 'r') as file:

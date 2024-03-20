@@ -5,10 +5,12 @@ description = ""
 authors = ["Kucher1995 <sashadovgun@gmail.com>"]
 readme = "README.md"
 packages = [{include = "gendiff_package"}]
-repository = "https://github.com/Kucher1995/python-project-49.git"
+repository = "https://github.com/Kucher1995/python-project-50.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pytest = "^8.1.1"
+flake8 = "^7.0.0"
 
 [tool.poetry.scripts]
 gendiff = "gendiff_package.scripts.gendiff:main"
