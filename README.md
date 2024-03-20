@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f4df24e809347c8ebf7/maintainability)](https://codeclimate.com/github/Kucher1995/python-project-50/maintainability)
 ### Test Coverage Badge
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f4df24e809347c8ebf7/test_coverage)](https://codeclimate.com/github/Kucher1995/python-project-50/test_coverage)
+### My Check
+[![Actions Status](https://github.com/Kucher1995/python-project-50/actions/workflows/my_workflow.yml/badge.svg)](https://github.com/Kucher1995/python-project-50/actions)
