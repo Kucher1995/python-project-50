@@ -1,11 +1,24 @@
 from gendiff_package.generate_diff import generate_diff
 import pytest
+import os
+from tests.test_file_read import get_expected_result
 
 
-@pytest.mark.parametrize("file_path_1, file_path_2, result_file_path", [
-    ('tests/fixtures/file1.json', 'tests/fixtures/file2.json', 'tests/fixtures/result_generate_diff.txt')
+FIXTURES_DIR = os.path.join('tests', 'fixtures')
+
+
+def get_file_path(filename):
+    return os.path.join(FIXTURES_DIR, filename)
+
+
+@pytest.mark.parametrize("file1_name, file2_name, result_file_path", [
+    ('file1.json', 'file2.json', 'result_generate_diff')
 ])
-def test_generate_diff(file_path_1, file_path_2, result_file_path):
-    with open(result_file_path, 'r') as file:
-        exp_result = file.read()
-    assert generate_diff(file_path_1, file_path_2) == exp_result
+def test_generate_diff(file1_name, file2_name, result_file_path):
+    file1_path = get_file_path(file1_name)
+    file2_path = get_file_path(file2_name)
+    expected_result = get_expected_result(f'{result_file_path}.txt')
+
+    actual_result = generate_diff(file1_path, file2_path)
+
+    assert actual_result == expected_result

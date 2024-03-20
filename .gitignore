@@ -1,6 +1,12 @@
-.venv/
+*.egg-info
 __pycache__
 dist/
+*.pyc
+.venv/
+.pytest_cache/
+.idea/
+.vscode/
+coverage/
 .coverage
-coverage.xml
-.pytest_cache
+test-coverage-tool
+htmlcov/
