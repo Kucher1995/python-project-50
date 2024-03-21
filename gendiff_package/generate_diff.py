@@ -1,4 +1,4 @@
-import json
+from gendiff_package.parser import parser_file
 
 
 def compare_file_contents(data_1, data_2):
@@ -30,10 +30,8 @@ def edit_string(string):
 
 def generate_diff(file_path_1, file_path_2):
     '''Reading files and getting the verification result'''
-    with open(file_path_1, 'r') as file:
-        data1 = json.load(file)
-    with open(file_path_2, 'r') as file:
-        data2 = json.load(file)
+    data1 = parser_file(file_path_1)
+    data2 = parser_file(file_path_2)
     comparison = compare_file_contents(data1, data2)
     result = edit_string(comparison)
     return result
