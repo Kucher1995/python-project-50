@@ -14,5 +14,5 @@ poetry run gendiff tests/fixtures/your_files1.json tests/fixtures/your_file2.jso
 ```
 3. Названия your_file1.json и your_file2.json нужно заменить на названия ваших файлов
 4. Пример работы
-https://asciinema.org/a/df1gO3WsOOA4yCcH64bO3pSsO
+[![asciicast](https://asciinema.org/a/df1gO3WsOOA4yCcH64bO3pSsO.svg)](https://asciinema.org/a/df1gO3WsOOA4yCcH64bO3pSsO)
 ***
