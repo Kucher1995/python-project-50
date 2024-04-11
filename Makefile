@@ -28,7 +28,10 @@ test-cov:
 	poetry run coverage report
 
 diff_yml:
-	poetry run gendiff tests/fixtures/file1_recursion.yml tests/fixtures/file2_recursion.yml
+	poetry run gendiff tests/fixtures/file1.1.json tests/fixtures/file2.1.json
 
 diff_plain:
-	poetry run gendiff tests/fixtures/file1_recursion.yml tests/fixtures/file2_recursion.yml -f plain
+	poetry run gendiff tests/fixtures/file1.1.yml tests/fixtures/file2.1.yml -f plain
+
+diff_json:
+	poetry run gendiff tests/fixtures/file1.1.yml tests/fixtures/file2.1.yml -f json
