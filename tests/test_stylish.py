@@ -16,12 +16,12 @@ def test_to_str(input_value, expected_value):
 
 @pytest.fixture
 def input_diff():
-    return get_input_data('diff_stylish.json')
+    return get_input_data('diff.json')
 
 
 @pytest.fixture
 def expected_result():
-    return get_expected_result('stylish_recursion.txt')
+    return get_expected_result('stylish.txt')
 
 
 def test_make_stylish_result(input_diff, expected_result):

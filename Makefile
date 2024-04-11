@@ -29,3 +29,6 @@ test-cov:
 
 diff_yml:
 	poetry run gendiff tests/fixtures/file1_recursion.yml tests/fixtures/file2_recursion.yml
+
+diff_plain:
+	poetry run gendiff tests/fixtures/file1_recursion.yml tests/fixtures/file2_recursion.yml -f plain
