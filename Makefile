@@ -26,3 +26,6 @@ check:
 test-cov:
 	poetry run coverage run -m pytest
 	poetry run coverage report
+
+diff_yml:
+	poetry run gendiff tests/fixtures/file1_recursion.yml tests/fixtures/file2_recursion.yml
