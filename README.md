@@ -18,3 +18,5 @@ poetry run gendiff tests/fixtures/your_files1.json tests/fixtures/your_file2.jso
 ***
 [![asciicast](https://asciinema.org/a/KTB5VKQ9uZdlmyDLdBO9HLAK7.svg)](https://asciinema.org/a/KTB5VKQ9uZdlmyDLdBO9HLAK7)
 ***
+[![asciicast](https://asciinema.org/a/OHwfMOrBzeuJnMm1cc2N57WD0.svg)](https://asciinema.org/a/OHwfMOrBzeuJnMm1cc2N57WD0)
+***
