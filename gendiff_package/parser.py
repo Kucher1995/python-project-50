@@ -3,6 +3,7 @@ import yaml
 
 
 def parser_file(file_path):
+    '''Reading a file depending on its extension'''
     if file_path.endswith('.json'):
         with open(file_path, 'r') as file:
             data = json.load(file)

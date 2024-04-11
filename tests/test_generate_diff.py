@@ -1,7 +1,7 @@
 from gendiff_package.generate_diff import generate_diff
 import pytest
 import os
-from tests.test_file_read import get_expected_result
+from tests.test_utils import get_expected_result
 
 
 FIXTURES_DIR = os.path.join('tests', 'fixtures')

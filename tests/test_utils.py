@@ -1,3 +1,4 @@
+import json
 import os
 
 
@@ -9,3 +10,7 @@ def read_file(file_name):
 
 def get_expected_result(file_name):
     return read_file(file_name)
+
+
+def get_input_data(file_name):
+    return json.loads(read_file(file_name))
