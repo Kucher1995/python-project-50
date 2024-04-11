@@ -1,6 +1,6 @@
 import pytest
-from tests.test_utils import get_input_data, get_expected_result
 from gendiff_package.format.stylish import to_str, make_stylish_result
+from tests.test_utils import get_input_data, get_expected_result
 
 
 @pytest.mark.parametrize('input_value, expected_value', [
@@ -16,7 +16,7 @@ def test_to_str(input_value, expected_value):
 
 @pytest.fixture
 def input_diff():
-    return get_input_data('stylish_diff.json')
+    return get_input_data('diff_stylish.json')
 
 
 @pytest.fixture
