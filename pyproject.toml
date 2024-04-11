@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Kucher1995 <sashadovgun@gmail.com>"]
 readme = "README.md"
-packages = [{include = "gendiff_package"}]
+packages = [{include = "gendiff"}]
 repository = "https://github.com/Kucher1995/python-project-50.git"
 
 [tool.poetry.dependencies]
@@ -15,7 +15,7 @@ coverage = "^7.4.4"
 pyyaml = "^6.0.1"
 
 [tool.poetry.scripts]
-gendiff = "gendiff_package.scripts.gendiff:main"
+gendiff = "gendiff.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core"]
