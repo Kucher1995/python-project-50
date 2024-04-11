@@ -1,5 +1,5 @@
 import pytest
-from gendiff_package.format.json import format_diff_json
+from gendiff.format.json import format_diff_json
 from tests.test_utils import get_input_data, get_expected_result
 
 

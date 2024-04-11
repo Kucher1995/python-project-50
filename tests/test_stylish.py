@@ -1,5 +1,5 @@
 import pytest
-from gendiff_package.format.stylish import to_str, make_stylish_result
+from gendiff.format.stylish import to_str, make_stylish_result
 from tests.test_utils import get_input_data, get_expected_result
 
 

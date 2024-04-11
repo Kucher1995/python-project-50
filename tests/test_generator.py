@@ -1,5 +1,5 @@
 import pytest
-from gendiff_package.generator import (
+from gendiff.generator import (
     generate, for_add, for_delete, for_unchanged, for_modified, for_nested
 )
 
