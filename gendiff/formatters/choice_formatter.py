@@ -1,9 +1,10 @@
-from gendiff.format.stylish import format_diff_stylish
-from gendiff.format.plain import format_diff_plain
-from gendiff.format.json import format_diff_json
+from gendiff.formatters.stylish import format_diff_stylish
+from gendiff.formatters.plain import format_diff_plain
+from gendiff.formatters.json import format_diff_json
 
 
 def format_diff(diff, formatter):
+    '''Checking the formatter and selecting the output method'''
     if formatter == 'stylish':
         return format_diff_stylish(diff)
     if formatter == 'plain':

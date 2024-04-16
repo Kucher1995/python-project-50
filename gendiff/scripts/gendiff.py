@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from gendiff import cli
 from gendiff.generate_diff import generate_diff
 

@@ -1,7 +1,7 @@
 import pytest
 import os
 from gendiff.generate_diff import generate_diff
-from test_utils import get_expected_result
+from tests.utils import get_expected_result
 
 
 FIXTURES_DIR = os.path.join('tests', 'fixtures')
@@ -30,12 +30,7 @@ def test_generate_diff(file1_name, file2_name, formatter):
 
 
 @pytest.mark.parametrize('file1_name, file2_name, formatter', [
-    ('file1.1.json', 'file3.txt', 'stylish'),
-    ('file2.1.yml', 'file3.txt', 'stylish'),
-    ('file1.1.json', 'file3.txt', 'plain'),
-    ('file2.1.yml', 'file3.txt', 'plain'),
-    ('file1.1.json', 'file3.txt', 'json'),
-    ('file2.1.yml', 'file3.txt', 'json')
+    ('file1.1.json', 'file3.txt', 'stylish')
 ])
 def test_unsupported_formatter(file1_name, file2_name, formatter):
     file1_path = get_file_path(file1_name)

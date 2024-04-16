@@ -1,4 +1,5 @@
 def to_str(value):
+    '''Checking the value for type and returning a string value'''
     if isinstance(value, (list, dict)):
         return '[complex value]'
     elif value is None:
@@ -12,6 +13,7 @@ def to_str(value):
 
 
 def make_plain_result_item(item, path=''):
+    '''Getting the comparison result'''
     current_key = item.get('name')
     current_path = f"{path}.{current_key}" if path else current_key
     action = item.get('action')
@@ -34,6 +36,7 @@ def make_plain_result_item(item, path=''):
 
 
 def make_plain_result(diff, path=''):
+    '''Handling differences'''
     result = []
     for item in diff:
         formatted_item = make_plain_result_item(item, path)

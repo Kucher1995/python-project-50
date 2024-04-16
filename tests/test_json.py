@@ -1,6 +1,6 @@
 import pytest
-from gendiff.format.json import format_diff_json
-from tests.test_utils import get_input_data, get_expected_result
+from gendiff.formatters.json import format_diff_json
+from tests.utils import get_input_data, get_expected_result
 
 
 @pytest.fixture
