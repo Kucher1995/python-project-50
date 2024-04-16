@@ -35,3 +35,6 @@ diff_plain:
 
 diff_json:
 	poetry run gendiff tests/fixtures/file1.1.yml tests/fixtures/file2.1.yml -f json
+
+diff:
+	poetry run gendiff -h
