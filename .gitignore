@@ -8,5 +8,4 @@ dist/
 .vscode/
 coverage/
 .coverage
-test-coverage-tool
-htmlcov/
+
